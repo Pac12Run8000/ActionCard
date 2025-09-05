@@ -11,7 +11,7 @@ class CardView: UIView {
         layer.shadowOffset = CGSize(width: 0, height: 2)
         layer.shadowRadius = 6
         translatesAutoresizingMaskIntoConstraints = false
-
+        
         content.axis = .vertical
         content.spacing = Theme.Spacing.sm
         content.translatesAutoresizingMaskIntoConstraints = false
@@ -23,5 +23,7 @@ class CardView: UIView {
             content.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -Theme.Spacing.md)
         ])
     }
-    required init?(coder: NSCoder) { fatalError() }
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
 }
