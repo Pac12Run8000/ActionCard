@@ -26,6 +26,7 @@ final class ViewController: UIViewController {
                 showsDivider: true
             )
         )
+        
         linkCard.onButtonTap = {
             // handle linking flow
             print("Link account tapped")
@@ -40,7 +41,7 @@ final class ViewController: UIViewController {
                 showsDivider: false
             )
         )
-        payCard.onButtonTap = { 
+        payCard.onButtonTap = {
             // handle payment flow
             print("Pay card tapped")
         }
